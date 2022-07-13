@@ -44,7 +44,7 @@ a {
 }
 
 .currentTemperature {
-  font-size: 75px;
+  font-size: 80px;
   color: rgb(78, 75, 75);
 }
 
@@ -57,11 +57,12 @@ a {
 .currentIcon {
   font-size: 65px;
   color: rgb(89, 130, 193);
+  padding-top: 10px;
 }
 .currentFactors {
   font-size: 18px;
   color: rgb(78, 75, 75);
-  padding-top: 2rem;
+  padding-top: 20px;
 }
 ul {
   list-style: none;
