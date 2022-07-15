@@ -87,6 +87,10 @@ ul {
   padding: 6px;
   transition: 700ms;
 }
+.footer {
+  font-size: 14px;
+  color: #5982c1;
+}
 .next:hover {
   transform: scale(1.2);
 }
