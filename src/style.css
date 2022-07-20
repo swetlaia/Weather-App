@@ -16,7 +16,7 @@ a {
   font-size: 18px;
   color: #5c6167;
 }
-.fa-solid {
+.next-icons {
   color: #5982c1;
   font-size: 25px;
 }
@@ -58,7 +58,8 @@ a {
 .currentIcon {
   font-size: 65px;
   color: rgb(89, 130, 193);
-  padding-top: 10px;
+  padding-top: 25px;
+  padding-left: 15px;
 }
 .currentFactors {
   font-size: 18px;
