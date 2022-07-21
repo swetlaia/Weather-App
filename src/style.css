@@ -1,16 +1,20 @@
 body {
-  background: #e9eef0;
+  background: #e8ecee;
 }
 
+ul {
+  list-style: none;
+}
 a {
   text-decoration: none;
   font-size: 22px;
-  color: rgb(78, 75, 75);
+  color: #4e4b4b;
 }
+
 .card-title {
   font-size: 18px;
   font-weight: 400;
-  color: rgb(93, 89, 89);
+  color: #5d5959;
 }
 .card-text {
   font-size: 18px;
@@ -46,43 +50,37 @@ a {
 
 .currentTemperature {
   font-size: 80px;
-  color: rgb(78, 75, 75);
+  color: #5c6167;
 }
 
 .units {
   position: relative;
-  top: -35px;
-  font-size: 22px;
+  top: -40px;
+  font-size: 20px;
 }
 
 .currentIcon {
   font-size: 65px;
-  color: rgb(89, 130, 193);
+  color: #5982c1;
   padding-top: 25px;
-  padding-left: 15px;
+  padding-left: 25px;
 }
 .currentFactors {
   font-size: 18px;
-  color: rgb(78, 75, 75);
+  color: #4e4b4b;
   padding-top: 20px;
-}
-ul {
-  list-style: none;
 }
 .container {
   margin-top: 60px;
 }
-.block {
-  padding-top: 30px;
-}
 
 .appWeather {
-  width: 70%;
+  width: 65%;
+  background: #d2e7f0;
+  padding-top: 30px;
+  margin: 0 auto;
 }
 
-.card-body {
-  background: #c8e4f0;
-}
 .next {
   background: white;
   border-radius: 10px;
@@ -93,6 +91,7 @@ ul {
   font-size: 14px;
   color: #5982c1;
 }
+
 .next:hover {
   transform: scale(1.2);
 }

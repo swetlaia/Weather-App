@@ -20,19 +20,20 @@
   </head>
   <body>
     <div class="container">
-        <div class="card appWeather shadow-sm">
+    <div class="appWeather-wrapper">
+        <div class="appWeather card card-body shadow-sm">
+           
+            <div class="row">
 
-            <div class="card-body block">
-      <div class="row">
         <div class="col d1">
           <div class="card">
             <div class="card-body next">
               <h5 class="card-title">Tomorrow</h5>
               <p class="card-text">19°<br /><i class="fa-solid fa-cloud-sun next-icons"></i></p>
-              
             </div>
           </div>
         </div>
+
         <div class="col d2">
           <div class="card">
             <div class="card-body next">
@@ -41,6 +42,7 @@
             </div>
           </div>
         </div>
+
         <div class="col d3">
           <div class="card">
             <div class="card-body next">
@@ -49,6 +51,7 @@
             </div>
           </div>
         </div>
+
         <div class="col d4">
           <div class="card">
             <div class="card-body next">
@@ -57,6 +60,7 @@
             </div>
           </div>
         </div>
+
         <div class="col d5">
           <div class="card">
             <div class="card-body next">
@@ -70,13 +74,13 @@
       <form id="search-form">
       <div class="row">
         <div class="col-8">
-    <input
+            <input
             type="search"
             class="form-control shadow-sm"
             placeholder="Enter your city..." autofocus="on"
             id="search-input"
           />
-    </div>
+        </div>
     <div class="col-2">
       
        <input type="submit" class="form-control btn btn-primary shadow-sm" value="Search" />
@@ -84,7 +88,7 @@
     </div> 
     <div class="col-2">
       <button class="btn button-location shadow-sm"
-      id="current-button">Current ⌖</button>
+      id="current-button">Current</button>
     </div>
   </div>
 </form>
@@ -118,12 +122,14 @@
             </li>
           </ul>
         </div>
-        </div>
-        </div>
+
     </div>
-    <span >
+    
+    <small>
             <a class="footer" href="https://github.com/swetlaia/Weather-App">Open-source code</a>
-    </span>
+    </small>
+    </div>
+    </div>
     
     <script src="src/script.js"></script>
     <script
