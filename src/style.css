@@ -73,12 +73,13 @@ a {
 .container {
   margin-top: 60px;
 }
-
-.appWeather {
+.appWeather-wrapper {
   width: 65%;
+  margin: 0 auto;
+}
+.appWeather {
   background: #d2e7f0;
   padding-top: 30px;
-  margin: 0 auto;
 }
 
 .next {
@@ -88,6 +89,7 @@ a {
   transition: 700ms;
 }
 .footer {
+  text-align: center;
   font-size: 14px;
   color: #5982c1;
 }
