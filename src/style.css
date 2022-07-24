@@ -10,7 +10,10 @@ a {
   font-size: 22px;
   color: #4e4b4b;
 }
-
+small {
+  display: block;
+  margin: 0 auto;
+}
 .card-title {
   font-size: 18px;
   font-weight: 400;
@@ -89,7 +92,6 @@ a {
   transition: 700ms;
 }
 .footer {
-  text-align: center;
   font-size: 14px;
   color: #5982c1;
 }

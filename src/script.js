@@ -62,6 +62,13 @@ function getCurrentLocationWeather(event) {
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
 
+function displayFahrenheit(event) {
+  event.preventDefault();
+  let fahrenheitTemperatur = (30 * 9) / 5 + 32;
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperatur);
+}
+
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", displaySubmit);
 
@@ -69,3 +76,6 @@ searchCity("Amsterdam");
 
 let buttonCurrentLocation = document.querySelector("#current-button");
 buttonCurrentLocation.addEventListener("click", getCurrentLocationWeather);
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", displayFahrenheit);
