@@ -37,6 +37,14 @@ function currentWeather(response) {
   );
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
+  document
+    .querySelector("#icon")
+    .setAttribute(
+      "src",
+      `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    );
+
+  celsiusTemperature = response.data.main.temp;
 }
 
 function searchCity(city) {
@@ -64,18 +72,29 @@ function getCurrentLocationWeather(event) {
 
 function displayFahrenheit(event) {
   event.preventDefault();
-  let fahrenheitTemperatur = (30 * 9) / 5 + 32;
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
   let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = Math.round(fahrenheitTemperatur);
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
+
+function displayCelsius(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+}
+
+let celsiusTemperature = 0;
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", displaySubmit);
-
-searchCity("Amsterdam");
 
 let buttonCurrentLocation = document.querySelector("#current-button");
 buttonCurrentLocation.addEventListener("click", getCurrentLocationWeather);
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheit);
+
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", displayCelsius);
+
+searchCity("Amsterdam");
