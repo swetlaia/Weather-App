@@ -14,6 +14,10 @@ small {
   display: block;
   text-align: center;
 }
+
+form {
+  margin-top: 25px;
+}
 .card-title {
   font-size: 18px;
   font-weight: 400;

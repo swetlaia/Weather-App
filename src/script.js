@@ -26,6 +26,28 @@ let realTime = new Date();
 
 h2.innerHTML = formatDate(realTime);
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = ["Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+    <div class="col day1">
+      <div class="card card-body next">
+        <div class="card-title forecast-day">${day}</div>
+        <div class="card-text forecast-temp">19°</div>
+        <img class="forecast-icon" />
+      </div>
+    </div>
+  
+  `;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function currentWeather(response) {
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
@@ -98,3 +120,4 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsius);
 
 searchCity("Amsterdam");
+displayForecast();
